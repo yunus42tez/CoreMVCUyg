@@ -1,0 +1,196 @@
+﻿@model IEnumerable<CoreMVCUyg.Models.Product>
+<link href="~/assets/css/pages-styles.css" rel="stylesheet" />
+@foreach (var item in Model)
+{
+	<div class="col-md-9">
+		<div class="product-container with-sidebar">
+			<div class="product-photo-gallery">
+				<div class="product-leftside">
+					<!-- bootstrap carousel -->
+					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner">
+
+							<div class="item active srle">
+								<img src="~/Uploads/@item.ImagePath" alt="" class="img-responsive">
+							</div>
+
+							<div class="item">
+								<img src="~/Uploads/@item.ImagePath2" alt="" class="img-responsive">
+							</div>
+
+							<div class="item">
+								<img src="~/Uploads/@item.ImagePath3" alt="" class="img-responsive">
+							</div>
+
+						</div>
+
+						<!-- Thumbnails -->
+						<ul class="thumbnails-carousel clearfix">
+							<li><img src="~/Uploads/@item.ImagePath" alt=""></li>
+							<li><img src="~/Uploads/@item.ImagePath2" alt=""></li>
+							<li class="last"><img src="~/Uploads/@item.ImagePath3" alt=""></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="product-description">
+				<h4>@item.UrunAd</h4>
+				<p>Sport Watch</p>
+				<div class="product-rating">
+					<div class="inner-rating-star"><i class="fa fa-star" aria-hidden="true"></i></div>
+					<div class="inner-rating-star"><i class="fa fa-star" aria-hidden="true"></i></div>
+					<div class="inner-rating-star"><i class="fa fa-star" aria-hidden="true"></i></div>
+					<div class="inner-rating-star"><i class="fa fa-star" aria-hidden="true"></i></div>
+					<div class="inner-rating-star"><i class="fa fa-star" aria-hidden="true"></i></div>
+				</div>
+				<h6><old-price>$39.95</old-price> - $29.95</h6>
+				<p>@item.KisaAciklama</p>
+
+				<div class="inner-whistlist"><p><i class="fa fa-heart" aria-hidden="true"></i>&nbsp; Whislist</p></div>
+				<div class="inner-stock"><p><i class="fa fa-check-square-o" aria-hidden="true"></i>&nbsp; In Stock</p></div>
+
+				<div class="bullet-descriptions">
+					<ul>
+						<li>1.3 Inch (340 x 272) Display, Changeable Faces with Widgets. </li>
+						<li>Displays Notifications and Runs Apps, Accelerometer and gyroscope..</li>
+						<li>Water-Resistant to 164 feet (50 meters), Heart Rate Monitor, Built-In GPS.</li>
+					</ul>
+					<ul>
+						<li>1.3 Inch (340 x 272) Display, Changeable Faces with Widgets. </li>
+						<li>Displays Notifications and Runs Apps, Accelerometer and gyroscope..</li>
+						<li>Water-Resistant to 164 feet (50 meters), Heart Rate Monitor, Built-In GPS.</li>
+					</ul>
+					<ul>
+						<li>1.3 Inch (340 x 272) Display, Changeable Faces with Widgets. </li>
+						<li>Displays Notifications and Runs Apps, Accelerometer and gyroscope..</li>
+						<li>Water-Resistant to 164 feet (50 meters), Heart Rate Monitor, Built-In GPS.</li>
+					</ul>
+					<ul>
+						<li>1.3 Inch (340 x 272) Display, Changeable Faces with Widgets. </li>
+						<li>Displays Notifications and Runs Apps, Accelerometer and gyroscope..</li>
+						<li>Water-Resistant to 164 feet (50 meters), Heart Rate Monitor, Built-In GPS.</li>
+					</ul>
+				</div>
+				<div class="order-box">
+					<div class="order-qty">
+						<input type="number" id="count" min="1" max="5" value="1" class="number">
+					</div>
+					<div class="btn-order">
+						<button type="button" class="btn btn-custom"><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp; Add to Cart</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<ul class="nav nav-tabs" role="tablist">
+			<li role="presentation" class="active"><a href="#description" aria-controls="description" role="tab" data-toggle="tab">Description</a></li>
+			<li role="presentation"><a href="#specification" aria-controls="specification" role="tab" data-toggle="tab">Specification</a></li>
+			<li role="presentation"><a href="#reviews" aria-controls="reviews" role="tab" data-toggle="tab">Reviews</a></li>
+		</ul>
+
+		<div class="tab-content">
+			<div role="tabpanel" class="tab-pane active" id="description">
+				<p>@item.Aciklama </p>
+
+				<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
+			</div>
+			<div role="tabpanel" class="tab-pane" id="specification">
+				<table>
+					<tr>
+						<th>Technical Details</th>
+						<th class="justified"></th>
+					</tr>
+					<tr>
+						<td>Brand Name. </td>
+						<td class="justified">Apple</td>
+					</tr>
+					<tr>
+						<td>Operating System </td>
+						<td class="justified">iOS</td>
+					</tr>
+					<tr>
+						<td>Item Weight</td>
+						<td class="justified">1.2 pounds</td>
+					</tr>
+					<tr>
+						<td>Product Dimensions</td>
+						<td class="justified">13 x 3 x 2.4 inches</td>
+					</tr>
+					<tr>
+						<td>Item Dimensions L x W x H</td>
+						<td class="justified">13 x 3 x 2.4 inches</td>
+					</tr>
+					<tr>
+						<td>Color</td>
+						<td class="justified">Space Gray Aluminum Case, Gray Sport Band</td>
+					</tr>
+				</table>
+			</div>
+			<div role="tabpanel" class="tab-pane" id="reviews">
+				<div class="inner-reviews">
+					<div class="review-avatar"><img src="~/assets/img/images/avatar1.jpg" alt=""></div>
+					<div class="review-description">
+						<div class="span-reveiw-star">
+							<div class="stars-fa"><i class="fa fa-star" aria-hidden="true"></i></div>
+							<div class="stars-fa"><i class="fa fa-star" aria-hidden="true"></i></div>
+							<div class="stars-fa"><i class="fa fa-star" aria-hidden="true"></i></div>
+							<div class="stars-fa"><i class="fa fa-star" aria-hidden="true"></i></div>
+							<div class="stars-fa"><i class="fa fa-star" aria-hidden="true"></i></div>
+							<div class="rating-title"><p>Very Good product</p></div>
+						</div>
+						<p>By Lisa Doe on October 3, 2017</p>
+						<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+					</div>
+				</div>
+				<div class="inner-reviews">
+					<div class="review-avatar"><img src="~/assets/img/images/avatar2.jpg" alt=""></div>
+					<div class="review-description">
+						<div class="span-reveiw-star">
+							<div class="stars-fa"><i class="fa fa-star" aria-hidden="true"></i></div>
+							<div class="stars-fa"><i class="fa fa-star" aria-hidden="true"></i></div>
+							<div class="stars-fa"><i class="fa fa-star" aria-hidden="true"></i></div>
+							<div class="stars-fa"><i class="fa fa-star" aria-hidden="true"></i></div>
+							<div class="stars-fa"><i class="fa fa-star-o" aria-hidden="true"></i></div>
+							<div class="rating-title"><p>Very Good product</p></div>
+						</div>
+						<p>By Martha Doe on October 3, 2017</p>
+						<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+					</div>
+				</div>
+				<div class="inner-reviews">
+					<div class="review-avatar"><img src="~/assets/img/images/avatar3.jpg" alt=""></div>
+					<div class="review-description">
+						<div class="span-reveiw-star">
+							<div class="stars-fa"><i class="fa fa-star" aria-hidden="true"></i></div>
+							<div class="stars-fa"><i class="fa fa-star" aria-hidden="true"></i></div>
+							<div class="stars-fa"><i class="fa fa-star" aria-hidden="true"></i></div>
+							<div class="stars-fa"><i class="fa fa-star" aria-hidden="true"></i></div>
+							<div class="stars-fa"><i class="fa fa-star-half-o" aria-hidden="true"></i></div>
+							<div class="rating-title"><p>Very Good product</p></div>
+						</div>
+						<p>By John Doe on October 3, 2017</p>
+						<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+					</div>
+				</div>
+				<div class="inner-reviews">
+					<div class="review-avatar"><img src="~/assets/img/images/avatar4.jpg" alt=""></div>
+					<div class="review-description">
+						<div class="span-reveiw-star">
+							<div class="stars-fa"><i class="fa fa-star" aria-hidden="true"></i></div>
+							<div class="stars-fa"><i class="fa fa-star" aria-hidden="true"></i></div>
+							<div class="stars-fa"><i class="fa fa-star" aria-hidden="true"></i></div>
+							<div class="stars-fa"><i class="fa fa-star-o" aria-hidden="true"></i></div>
+							<div class="stars-fa"><i class="fa fa-star-o" aria-hidden="true"></i></div>
+							<div class="rating-title"><p>Very Good product</p></div>
+						</div>
+						<p>By Ron Doe on October 3, 2017</p>
+						<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+}
+

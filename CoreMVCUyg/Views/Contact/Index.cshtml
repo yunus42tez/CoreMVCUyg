@@ -1,0 +1,279 @@
+﻿@model CoreMVCUyg.Models.Message
+
+@{
+    ViewData["Title"] = "Contact";
+}
+<div class="wrapper">
+    <!-- MAIN WRAPPER -->
+    <!-- MAIN HEADER -->
+    <div class="pages-header">
+        <div class="main-nav">
+            <div class="top-nav">
+                @await Component.InvokeAsync("TopNav")
+            </div>
+
+            <hr class="top-line">
+
+            <div class="section">
+                <nav id="navigation1" class="navigation">
+
+                    <div class="nav-header">
+                        <a class="nav-logo" href="index.html">
+                            <img src="../assets/img/master/logo.png" alt="logo">
+                        </a>
+                        <div class="nav-toggle"></div>
+                    </div>
+
+                    <div class="nav-menus-wrapper">
+                        <ul class="nav-menu align-to-right">
+                            <li>
+                                <a href="~/Home">ANASAYFA</a>
+                                <div class="megamenu-panel">
+                                    <div class="megamenu-lists">
+                                        <ul class="megamenu-list list-col-4">
+                                            <li><a href="1-agency.html">Agency</a></li>
+                                            <li><a href="2-beauty.html">Beauty</a></li>
+                                            <li><a href="3-construction.html">Construction</a></li>
+                                            <li><a href="4-corporate.html">Corporate</a></li>
+
+                                        </ul>
+                                        <ul class="megamenu-list list-col-4">
+                                            <li><a href="5-courier.html">Courier</a></li>
+                                            <li><a href="6-dealer.html">Dealer</a></li>
+                                            <li><a href="7-dental.html">Dental</a></li>
+                                            <li><a href="8-education.html">Education</a></li>
+
+                                        </ul>
+                                        <ul class="megamenu-list list-col-4">
+                                            <li><a href="9-gym.html">Gym</a></li>
+                                            <li><a href="10-hotel.html">Hotel</a></li>
+                                            <li><a href="11-medical.html">Medical</a></li>
+                                            <li><a href="12-restaurant.html">Restaurant</a></li>
+
+                                        </ul>
+                                        <ul class="megamenu-list list-col-4">
+                                            <li><a href="13-charity.html">Charity</a></li>
+                                            <li><a href="14-cleaning.html">Cleaning</a></li>
+                                            <li><a href="15-finance.html">Finance</a></li>
+                                            <li><a href="16-industrial.html">Industrial</a></li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="~/About">HAKKIMIZDA</a>
+                                <ul class="nav-dropdown">
+                                    <li>
+                                        <a href="#">ABOUT</a>
+                                        <ul class="nav-dropdown">
+                                            <li><a href="about-style-1.html">About Style 1</a></li>
+                                            <li><a href="about-style-2.html">About Style 2</a></li>
+                                            <li><a href="about-style-3.html">About Style 3</a></li>
+                                            <li><a href="about-style-4.html">About Style 4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">CAREERS</a>
+                                        <ul class="nav-dropdown">
+                                            <li><a href="careers-style-1.html">Careers Style 1</a></li>
+                                            <li><a href="careers-style-2.html">Careers Style 2</a></li>
+                                            <li><a href="careers-style-3.html">Careers Style 3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">COMING SOON</a>
+                                        <ul class="nav-dropdown">
+                                            <li><a href="coming-soon-style-1.html">Coming Soon Style 1</a></li>
+                                            <li><a href="coming-soon-style-2.html">Coming Soon Style 2</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">CONTACT</a>
+                                        <ul class="nav-dropdown">
+                                            <li><a href="contact-style-1.html">Contact Style 1</a></li>
+                                            <li><a href="contact-style-2.html">Contact Style 2</a></li>
+                                            <li><a href="contact-style-3.html">Contact Style 3</a></li>
+                                            <li><a href="contact-style-4.html">Contact Style 4</a></li>
+                                            <li><a href="contact-style-5.html">Contact Style 5</a></li>
+                                            <li><a href="contact-style-6.html">Contact Style 6</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="login-register-style-1.html">LOGIN/REGISTER</a></li>
+                                    <li>
+                                        <a href="#">PROFILE</a>
+                                        <ul class="nav-dropdown">
+                                            <li><a href="profile-style-1.html">Profile Style 1</a></li>
+                                            <li><a href="profile-style-2.html">Profile Style 2</a></li>
+                                            <li><a href="profile-style-3.html">Profile Style 3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">SERVICES</a>
+                                        <ul class="nav-dropdown">
+                                            <li><a href="services-style-1.html">Services Style 1</a></li>
+                                            <li><a href="services-style-2.html">Services Style 2</a></li>
+                                            <li><a href="services-style-3.html">Services Style 3</a></li>
+                                            <li><a href="services-style-4.html">Services Style 4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">TEAM</a>
+                                        <ul class="nav-dropdown">
+                                            <li><a href="team-style-1.html">Team Style 1</a></li>
+                                            <li><a href="team-style-2.html">Team Style 2</a></li>
+                                            <li><a href="team-style-3.html">Team Style 3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">404 PAGE</a>
+                                        <ul class="nav-dropdown">
+                                            <li><a href="404-error-style-1.html">404 Page Style 1</a></li>
+                                            <li><a href="404-error-style-2.html">404 Page Style 2</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="~/Product">ÜRÜNLER</a>
+                                <div class="megamenu-panel">
+                                    @await Component.InvokeAsync("NavbarMenu")
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <a href="~/Contact">İLETİŞİM</a>
+                                <ul class="nav-dropdown">
+                                    <li>
+                                        <a href="#">CLASSIC</a>
+                                        <ul class="nav-dropdown">
+                                            <li><a href="blog/blog-full-width.html">Full width</a></li>
+                                            <li><a href="blog/blog-left-sidebar.html">Left sidebar</a></li>
+                                            <li><a href="blog/blog-right-sidebar.html">Right sidebar</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">GRID</a>
+                                        <ul class="nav-dropdown">
+                                            <li><a href="blog/blog-grid-one-column.html">One column</a></li>
+                                            <li><a href="blog/blog-grid-two-column.html">Two column</a></li>
+                                            <li><a href="blog/blog-grid-three-column.html">Three column</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">THUMBNAIL</a>
+                                        <ul class="nav-dropdown">
+                                            <li><a href="blog/thumbnail-full-width.html">Full width</a></li>
+                                            <li><a href="blog/thumbnail-left-sidebar.html">Left sidebar</a></li>
+                                            <li><a href="blog/thumbnail-right-sidebar.html">Right sidebar</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">SINGLE POST</a>
+                                        <ul class="nav-dropdown">
+                                            <li><a href="blog/single-post-left-sidebar.html">Left sidebar</a></li>
+                                            <li><a href="blog/single-post-right-sidebar.html">Right sidebar</a></li>
+                                            <li><a href="blog/video-post.html">Video post</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                </nav>
+            </div>
+
+        </div>
+        <div class="section-heading">
+            <div class="section">
+                <div class="span-title">
+                    <h1>Contact</h1>
+                    <div class="page-map"><p>Home &nbsp;/&nbsp; Contact</p></div>
+                </div>
+            </div>
+        </div>
+    </div><!-- END MAIN HEADER -->
+
+    <div class="main">
+        <div class="section">
+            <div class="row">
+                @await Component.InvokeAsync("ContactMenu")
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="section">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="contact-left-2">
+                        <form asp-action="MesajGonder" asp-controller="Contact" id="contact-form" method="post">
+                            <div class="messages"></div>
+                            <div class="controls">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input asp-for="Name" type="text" name="name" class="form-control customize" placeholder="Adınız*">
+                                            <span asp-validation-for="Name" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input asp-for="Email" type="email" name="email" class="form-control customize" placeholder="E-Posta*">
+                                            <span asp-validation-for="Email" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input asp-for="Phone" type="tel" name="phone" class="form-control customize" placeholder="Telefon*">
+                                            <span asp-validation-for="Phone" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input asp-for="Subject" type="text" name="subject" class="form-control customize" placeholder="Konu*">
+                                            <span asp-validation-for="Subject" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <textarea asp-for="Messages" name="messages" class="form-control customize" placeholder="Mesajınızı yazınız..." rows="9"></textarea>
+                                            <span asp-validation-for="Messages" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p><input type="submit" class="btn btn-contact" value="Mesaj Gönder"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="inner-contact-6">
+                        <div class="inner-time-info">
+                            <div class="clock"><img src="../assets/img/master/clock-3.png" alt=""></div>
+                            <h6>Working hours</h6>
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus.</p>
+                        </div>
+                        <div class="span-schedule">
+                            <ul class="list-group">
+
+
+                                @await Component.InvokeAsync("ContactWorkHours")
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @await Component.InvokeAsync("ContactGoogleMap")
+
+</div><!-- END MAIN WRAPPER -->

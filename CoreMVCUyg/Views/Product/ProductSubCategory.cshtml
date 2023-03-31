@@ -1,0 +1,579 @@
+﻿
+@{
+    ViewData["Title"] = "Product Sub Category";
+}
+<div class="wrapper">
+    <!-- MAIN WRAPPER -->
+    <!-- MAIN HEADER -->
+    <div class="main-header">
+        <!-- MAIN NAVBAR -->
+        <div class="main-nav ontop-slider">
+            <div class="top-nav">
+                @await Component.InvokeAsync("TopNav")
+            </div>
+
+            <hr class="top-line">
+
+            <div class="section">
+                <nav id="navigation1" class="navigation">
+
+                    <div class="nav-header">
+                        <a class="nav-logo" href="../index.html">
+                            <img src="../assets/img/master/logo.png" alt="logo">
+                        </a>
+                        <div class="nav-toggle"></div>
+                    </div>
+
+                    <div class="nav-menus-wrapper">
+                        <ul class="nav-menu align-to-right">
+                            <li>
+                                <a href="/Home">ANASAYFA</a>
+                                <ul class="nav-dropdown">
+                                    <li><a href="../1-agency.html">HOMEPAGE 1</a></li>
+                                    <li><a href="../2-beauty.html">HOMEPAGE 2</a></li>
+                                    <li><a href="../3-construction.html">HOMEPAGE 3</a></li>
+                                    <li><a href="../4-corporate.html">HOMEPAGE 4</a></li>
+                                    <li><a href="../5-courier.html">HOMEPAGE 5</a></li>
+                                    <li><a href="../6-dealer.html">HOMEPAGE 6</a></li>
+                                    <li><a href="../7-dental.html">HOMEPAGE 7</a></li>
+                                    <li><a href="../8-education.html">HOMEPAGE 8</a></li>
+                                    <li><a href="../9-gym.html">HOMEPAGE 9</a></li>
+                                    <li><a href="../10-hotel.html">HOMEPAGE 10</a></li>
+                                    <li><a href="../11-medical.html">HOMEPAGE 11</a></li>
+                                    <li><a href="../12-restaurant.html">HOMEPAGE 12</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="/About">HAKKIMIZDA</a>
+                                <ul class="nav-dropdown">
+                                    <li>
+                                        <a href="#">ABOUT</a>
+                                        <ul class="nav-dropdown">
+                                            <li><a href="../about-style-1.html">About Style 1</a></li>
+                                            <li><a href="../about-style-2.html">About Style 2</a></li>
+                                            <li><a href="../about-style-3.html">About Style 3</a></li>
+                                            <li><a href="../about-style-4.html">About Style 4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">CAREERS</a>
+                                        <ul class="nav-dropdown">
+                                            <li><a href="../careers-style-1.html">Careers Style 1</a></li>
+                                            <li><a href="../careers-style-2.html">Careers Style 2</a></li>
+                                            <li><a href="../careers-style-3.html">Careers Style 3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">COMING SOON</a>
+                                        <ul class="nav-dropdown">
+                                            <li><a href="../coming-soon-style-1.html">Coming Soon Style 1</a></li>
+                                            <li><a href="../coming-soon-style-2.html">Coming Soon Style 2</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">CONTACT</a>
+                                        <ul class="nav-dropdown">
+                                            <li><a href="../contact-style-1.html">Contact Style 1</a></li>
+                                            <li><a href="../contact-style-2.html">Contact Style 2</a></li>
+                                            <li><a href="../contact-style-3.html">Contact Style 3</a></li>
+                                            <li><a href="../contact-style-4.html">Contact Style 4</a></li>
+                                            <li><a href="../contact-style-5.html">Contact Style 5</a></li>
+                                            <li><a href="../contact-style-6.html">Contact Style 6</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="../login-register-style-1.html">LOGIN/REGISTER</a></li>
+                                    <li>
+                                        <a href="#">PROFILE</a>
+                                        <ul class="nav-dropdown">
+                                            <li><a href="../profile-style-1.html">Profile Style 1</a></li>
+                                            <li><a href="../profile-style-2.html">Profile Style 2</a></li>
+                                            <li><a href="../profile-style-3.html">Profile Style 3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">SERVICES</a>
+                                        <ul class="nav-dropdown">
+                                            <li><a href="../services-style-1.html">Services Style 1</a></li>
+                                            <li><a href="../services-style-2.html">Services Style 2</a></li>
+                                            <li><a href="../services-style-3.html">Services Style 3</a></li>
+                                            <li><a href="../services-style-4.html">Services Style 4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">TEAM</a>
+                                        <ul class="nav-dropdown">
+                                            <li><a href="../team-style-1.html">Team Style 1</a></li>
+                                            <li><a href="../team-style-2.html">Team Style 2</a></li>
+                                            <li><a href="../team-style-3.html">Team Style 3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">404 PAGE</a>
+                                        <ul class="nav-dropdown">
+                                            <li><a href="../404-error-style-1.html">404 Page Style 1</a></li>
+                                            <li><a href="../404-error-style-2.html">404 Page Style 2</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="/Product">ÜRÜNLER</a>
+                                <div class="megamenu-panel">
+                                    @await Component.InvokeAsync("NavbarMenu")
+                                </div>
+                            </li>
+
+                            <li>
+                                <a href="/Contact">İLETİŞİM</a>
+                                <ul class="nav-dropdown">
+                                    <li>
+                                        <a href="#">CLASSIC</a>
+                                        <ul class="nav-dropdown">
+                                            <li><a href="../blog/blog-full-width.html">Full width</a></li>
+                                            <li><a href="../blog/blog-left-sidebar.html">Left sidebar</a></li>
+                                            <li><a href="../blog/blog-right-sidebar.html">Right sidebar</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">GRID</a>
+                                        <ul class="nav-dropdown">
+                                            <li><a href="../blog/blog-grid-one-column.html">One column</a></li>
+                                            <li><a href="../blog/blog-grid-two-column.html">Two column</a></li>
+                                            <li><a href="../blog/blog-grid-three-column.html">Three column</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">THUMBNAIL</a>
+                                        <ul class="nav-dropdown">
+                                            <li><a href="../blog/thumbnail-full-width.html">Full width</a></li>
+                                            <li><a href="../blog/thumbnail-left-sidebar.html">Left sidebar</a></li>
+                                            <li><a href="../blog/thumbnail-right-sidebar.html">Right sidebar</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">SINGLE POST</a>
+                                        <ul class="nav-dropdown">
+                                            <li><a href="../blog/single-post-left-sidebar.html">Left sidebar</a></li>
+                                            <li><a href="../blog/single-post-right-sidebar.html">Right sidebar</a></li>
+                                            <li><a href="../blog/video-post.html">Video post</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                </nav>
+            </div>
+        </div><!-- END MAIN NAVBAR -->
+        <div class="main-slider">
+            <!-- SLIDER EXAMPLE -->
+            <section class="example">
+                <article class="content">
+
+                    @await Component.InvokeAsync("Slider")
+
+                </article>
+            </section>
+
+        </div>
+    </div><!-- END MAIN HEADER -->
+
+    <div class="main">
+        <div class="section">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="shop-banner-img"><img src="../assets/img/images/banner1.jpg" alt=""></div>
+                </div>
+                <div class="col-md-4 center-banner">
+                    <div class="shop-banner-img"><img src="../assets/img/images/banner2.jpg" alt=""></div>
+                </div>
+                <div class="col-md-4">
+                    <div class="shop-banner-img"><img src="../assets/img/images/banner3.jpg" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main color-background">
+        <div class="section">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="shop-left-sidebar">
+                        <div class="search-box">
+                            <form class="search-container">
+                                <div class="form-group" style="display:inline;">
+                                    <div class="input-group">
+                                        <input type="text" placeholder="Seach items" class="form-control">
+                                        <span class="input-group-addon"><i class="fa fa-search" aria-hidden="true"></i></span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        @await Component.InvokeAsync("SidebarSubCategory")
+                        <div class="sidebar-header">
+                            <h6>RELATED PRODUCTS</h6>
+                        </div>
+                        <div class="inner-related-products">
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object" src="../assets/img/images/item1-thumb.jpg" alt="...">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <p class="media-heading">Balancing Transporter</p>
+                                    <h5>$149.95</h5>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object" src="../assets/img/images/item2-thumb.jpg" alt="...">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <p class="media-heading">High Definition Stereo Headset</p>
+                                    <h5>$39.95</h5>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object" src="../assets/img/images/item9-thumb.jpg" alt="...">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <p class="media-heading">Silicone Adjustable Watch</p>
+                                    <h5>$19.95</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="promo-banner"><img src="../assets/img/images/promo-banner.jpg" alt=""></div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="row">
+                        @model IEnumerable<CoreMVCUyg.Models.Product>
+                        @foreach (var item in Model)
+                        {
+                            <div class="col-md-4">
+                                <div class="shop-front-thumbs">
+                                    <div class="top-caption">
+                                        @*<p>Office Gadgets</p>*@
+                                        <h6><a id="@item.UrunID" href="~/Product/ProductDetail/@item.UrunID">@item.UrunAd</a></h6>
+                                    </div>
+                                    <div class="shop-thumb-img"><a id="@item.UrunID" href="~/Product/ProductDetail/@item.UrunID"><img src="../assets/img/images/3d-printer.png" alt=""></a></div>
+                                    <hr class="shop">
+                                    <div class="bottom-caption">
+                                        <div class="bottom-caption" align="center">
+                                            <button class="btn btn-custom"><a id="@item.UrunID" href="~/Product/ProductDetail/@item.UrunID">Ürün Detay</a></button>
+                                            @*<p><old-price>$69.95</old-price> - $49.95</p>
+                                        <div class="rating-box">
+                                        <div class="ratingp-stars"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                        <div class="ratingp-stars"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                        <div class="ratingp-stars"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                        <div class="ratingp-stars"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                        <div class="ratingp-stars"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                        </div>*@
+                                        </div>
+                                        @*<div class="bottom-caption-right"><img src="../assets/img/master/shopping-cart-2.png" alt=""></div>*@
+                                    </div>
+                                </div>
+                            </div>
+                        }
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="section">
+            <div class="related-products">
+                <h4>Related Products</h4>
+                <div class="navigation-arrows">
+                    <div class="prev">
+                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                    </div>
+                    <div class="next">
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="heroSlider-fixed">
+                        <div class="overlay"></div>
+                        <div class="slider responsive">
+                            <div class="col-md-3">
+                                <div class="shop-front-thumbs">
+                                    <div class="top-caption">
+                                        <p>Audio Speakers</p>
+                                        <h6>Waterproof Portable Bluetooth Speaker</h6>
+                                    </div>
+                                    <div class="shop-thumb-img"><img src="../assets/img/images/item6.jpg" alt=""></div>
+                                    <hr class="shop">
+                                    <div class="bottom-caption">
+                                        <div class="bottom-caption-left">
+                                            <p><old-price>$39.95</old-price> - $29.95</p>
+                                            <div class="rating-box">
+                                                <div class="ratingp-stars"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                                <div class="ratingp-stars"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                                <div class="ratingp-stars"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                                <div class="ratingp-stars"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                                <div class="ratingp-stars"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                            </div>
+                                        </div>
+                                        <div class="bottom-caption-right"><img src="../assets/img/master/shopping-cart-2.png" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="shop-front-thumbs">
+                                    <div class="top-caption">
+                                        <p>Monitors</p>
+                                        <h6>Curved Screen LED TFT LCD Monitor</h6>
+                                    </div>
+                                    <div class="shop-thumb-img"><img src="../assets/img/images/item7.jpg" alt=""></div>
+                                    <hr class="shop">
+                                    <div class="bottom-caption">
+                                        <div class="bottom-caption-left">
+                                            <p><old-price>$39.95</old-price> - $29.95</p>
+                                            <div class="rating-box">
+                                                <div class="ratingp-stars"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                                <div class="ratingp-stars"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                                <div class="ratingp-stars"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                                <div class="ratingp-stars"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                                <div class="ratingp-stars"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                            </div>
+                                        </div>
+                                        <div class="bottom-caption-right"><img src="../assets/img/master/shopping-cart-2.png" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="shop-front-thumbs">
+                                    <div class="top-caption">
+                                        <p>Video and Cameras</p>
+                                        <h6>Professional Recorded Camera</h6>
+                                    </div>
+                                    <div class="shop-thumb-img"><img src="../assets/img/images/item8.jpg" alt=""></div>
+                                    <hr class="shop">
+                                    <div class="bottom-caption">
+                                        <div class="bottom-caption-left">
+                                            <p><old-price>$39.95</old-price> - $29.95</p>
+                                            <div class="rating-box">
+                                                <div class="ratingp-stars"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                                <div class="ratingp-stars"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                                <div class="ratingp-stars"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                                <div class="ratingp-stars"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                                <div class="ratingp-stars"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                            </div>
+                                        </div>
+                                        <div class="bottom-caption-right"><img src="../assets/img/master/shopping-cart-2.png" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="shop-front-thumbs">
+                                    <div class="top-caption">
+                                        <p>Wearable Technology</p>
+                                        <h6>Silicone Adjustable Watch</h6>
+                                    </div>
+                                    <div class="shop-thumb-img"><img src="../assets/img/images/item9.jpg" alt=""></div>
+                                    <hr class="shop">
+                                    <div class="bottom-caption">
+                                        <div class="bottom-caption-left">
+                                            <p><old-price>$39.95</old-price> - $29.95</p>
+                                            <div class="rating-box">
+                                                <div class="ratingp-stars"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                                <div class="ratingp-stars"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                                <div class="ratingp-stars"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                                <div class="ratingp-stars"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                                <div class="ratingp-stars"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                            </div>
+                                        </div>
+                                        <div class="bottom-caption-right"><img src="../assets/img/master/shopping-cart-2.png" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="shop-front-thumbs">
+                                    <div class="top-caption">
+                                        <p>Sport Gadgets</p>
+                                        <h6>Balancing Transporter 2018 Edition</h6>
+                                    </div>
+                                    <div class="shop-thumb-img"><img src="../assets/img/images/item10.jpg" alt=""></div>
+                                    <hr class="shop">
+                                    <div class="bottom-caption">
+                                        <div class="bottom-caption-left">
+                                            <p><old-price>$39.95</old-price> - $29.95</p>
+                                            <div class="rating-box">
+                                                <div class="ratingp-stars"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                                <div class="ratingp-stars"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                                <div class="ratingp-stars"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                                <div class="ratingp-stars"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                                <div class="ratingp-stars"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                            </div>
+                                        </div>
+                                        <div class="bottom-caption-right"><img src="../assets/img/master/shopping-cart-2.png" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="shop-front-thumbs">
+                                    <div class="top-caption">
+                                        <p>Wearable Technology</p>
+                                        <h6>Silicone Adjustable Watch</h6>
+                                    </div>
+                                    <div class="shop-thumb-img"><img src="../assets/img/images/item11.jpg" alt=""></div>
+                                    <hr class="shop">
+                                    <div class="bottom-caption">
+                                        <div class="bottom-caption-left">
+                                            <p><old-price>$39.95</old-price> - $29.95</p>
+                                            <div class="rating-box">
+                                                <div class="ratingp-stars"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                                <div class="ratingp-stars"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                                <div class="ratingp-stars"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                                <div class="ratingp-stars"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                                <div class="ratingp-stars"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                            </div>
+                                        </div>
+                                        <div class="bottom-caption-right"><img src="../assets/img/master/shopping-cart-2.png" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="shop-front-thumbs">
+                                    <div class="top-caption">
+                                        <p>Audio Speakers</p>
+                                        <h6>Wireless Audio System Multiroom 360</h6>
+                                    </div>
+                                    <div class="shop-thumb-img"><img src="../assets/img/images/3d-printer.png" alt=""></div>
+                                    <hr class="shop">
+                                    <div class="bottom-caption">
+                                        <div class="bottom-caption-left">
+                                            <p><old-price>$39.95</old-price> - $29.95</p>
+                                            <div class="rating-box">
+                                                <div class="ratingp-stars"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                                <div class="ratingp-stars"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                                <div class="ratingp-stars"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                                <div class="ratingp-stars"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                                <div class="ratingp-stars"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                            </div>
+                                        </div>
+                                        <div class="bottom-caption-right"><img src="../assets/img/master/shopping-cart-2.png" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="shop-front-thumbs">
+                                    <div class="top-caption">
+                                        <p>Audio Speakers</p>
+                                        <h6>Wireless Audio System Multiroom 360</h6>
+                                    </div>
+                                    <div class="shop-thumb-img"><img src="../assets/img/images/item3.jpg" alt=""></div>
+                                    <hr class="shop">
+                                    <div class="bottom-caption">
+                                        <div class="bottom-caption-left">
+                                            <p><old-price>$39.95</old-price> - $29.95</p>
+                                            <div class="rating-box">
+                                                <div class="ratingp-stars"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                                <div class="ratingp-stars"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                                <div class="ratingp-stars"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                                <div class="ratingp-stars"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                                <div class="ratingp-stars"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                            </div>
+                                        </div>
+                                        <div class="bottom-caption-right"><img src="../assets/img/master/shopping-cart-2.png" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main banner">
+        <div class="section">
+            <img src="../assets/img/images/tv-banner.jpg" class="horizontal-banner" alt="">
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="section">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Feature Products</h5>
+                    <hr class="more-product">
+                    <div class="product-box">
+                        <div class="item-details">
+                            <div class="item-img"><img src="../assets/img/images/3d-printer-thumb.jpg" alt=""></div>
+                            <h6>Color Assembled 3D Printer</h6>
+                            <p>$2339.95</p>
+                        </div>
+                        <div class="item-details">
+                            <div class="item-img"><img src="../assets/img/images/item1-thumb.jpg" alt=""></div>
+                            <h6>Balancing Transporter 2018 Edition</h6>
+                            <p>$99.95</p>
+                        </div>
+                        <div class="item-details">
+                            <div class="item-img"><img src="../assets/img/images/watch-thumb.jpg" alt=""></div>
+                            <h6>Sport Water Proof Watch</h6>
+                            <p>$839.9</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>Top Selling Products</h5>
+                    <hr class="more-product">
+                    <div class="product-box">
+                        <div class="item-details">
+                            <div class="item-img"><img src="../assets/img/images/item2-thumb.jpg" alt=""></div>
+                            <h6>High Definition Stereo Headset</h6>
+                            <p>$39.95</p>
+                        </div>
+                        <div class="item-details">
+                            <div class="item-img"><img src="../assets/img/images/item11-thumb.jpg" alt=""></div>
+                            <h6>Silicone Adjustable Watch</h6>
+                            <p>$339.95</p>
+                        </div>
+                        <div class="item-details">
+                            <div class="item-img"><img src="../assets/img/images/item3-thumb.jpg" alt=""></div>
+                            <h6>High Definition Stereo Headset</h6>
+                            <p>$49.95</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>On Sale Products</h5>
+                    <hr class="more-product">
+                    <div class="product-box">
+                        <div class="item-details">
+                            <div class="item-img"><img src="../assets/img/images/item9-thumb.jpg" alt=""></div>
+                            <h6>Silicone Adjustable Watch</h6>
+                            <p>$239.95</p>
+                        </div>
+                        <div class="item-details">
+                            <div class="item-img"><img src="../assets/img/images/item7-thumb.jpg" alt=""></div>
+                            <h6>Wireless Audio System Multiroom 360</h6>
+                            <p>$229.95</p>
+                        </div>
+                        <div class="item-details">
+                            <div class="item-img"><img src="../assets/img/images/item6-thumb.jpg" alt=""></div>
+                            <h6>Waterproof Portable Bluetooth Speaker</h6>
+                            <p>$29.95</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div><!-- END MAIN WRAPPER -->
+

@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>@ViewData["Title"] - CoreMVCUyg</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Yunus TEZ">
+
+    <!-- ==============================================
+    FAVICON
+    =============================================== -->
+    <link rel="shortcut icon" href="~/assets/img/master/favicon.png">
+
+    <!-- ==============================================
+    CSS
+    =============================================== -->
+    <link href="http://fonts.googleapis.com/css?family=Roboto%3A700%2C300" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" type="text/css" href="~/assets/revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" type="text/css" href="~/assets/revolution/fonts/font-awesome/css/font-awesome.css">
+    <!-- REVOLUTION STYLE SHEETS -->
+    <link rel="stylesheet" type="text/css" href="~/assets/revolution/css/settings.css">
+    <!-- REVOLUTION LAYERS STYLES -->
+    <link rel="stylesheet" type="text/css" href="~/assets/revolution/css/layers.css">
+    <!-- REVOLUTION NAVIGATION STYLES -->
+    <link rel="stylesheet" type="text/css" href="~/assets/revolution/css/navigation.css">
+
+    <link rel="stylesheet" href="~/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/assets/css/pages-styles.css">
+    <link rel="stylesheet" href="~/assets/css/styles.css">
+@*    <link rel="stylesheet" href="~/assets/css/shortcodes.css">*@
+    <link rel="stylesheet" href="~/assets/css/navigation.css">
+    <link rel="stylesheet" href="~/assets/css/restaurant.css">
+    <link rel="stylesheet" href="~/assets/fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/assets/css/slick.min.css">
+    <link rel="stylesheet" href="~/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/assets/css/sliders.css">
+
+
+
+</head>
+
+<body>
+    @RenderBody()
+    <!-- LOADER -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+    </div>
+    <!-- LOADER -->
+    <!-- MAIN WRAPPER -->
+    <!-- MAIN HEADER -->
+    <!-- END MAIN HEADER -->
+    <!-- END MAIN WRAPPER -->
+    @await Component.InvokeAsync("Footer")
+
+    <a href="#0" class="cd-top">Top</a>
+
+    @await RenderSectionAsync("Scripts", required: false)
+    <!-- ==============================================
+    JAVASCRIPTS
+    =============================================== -->
+    <!-- LOAD JQUERY LIBRARY -->
+    <script src="~/assets/ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+    <!-- REVOLUTION JS FILES -->
+    <script src="~/assets/revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script src="~/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
+
+    <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+    <script src="~/assets/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+    <script src="~/assets/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script src="~/assets/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="~/assets/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="~/assets/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+    <script src="~/assets/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="~/assets/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="~/assets/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="~/assets/revolution/js/extensions/revolution.extension.video.min.js"></script>
+    <script src="~/assets/js/rev.sliders/fine.dining.js"></script>
+    <script src="~/assets/js/bootstrap.min.js"></script>
+    <script src="~/assets/js/top.js"></script>
+    <script src="~/assets/js/navigation.js"></script>
+    <script src="~/assets/js/megamenu.js"></script>
+    <script src="~/assets/js/shortcodes/jquery.magnific-popup.min.js"></script>
+    <script src="~/assets/js/shortcodes/gallery.js"></script>
+    <script src='~/assets/js/shortcodes/flickity.pkgd.min.js'></script>
+    <script src="~/assets/js/shortcodes/testimonials.js"></script>
+    <script src="~/assets/js/loader.js"></script>
+    <script src="~/assets/js/shortcodes/youtube.popup.js"></script>
+    <script src="~/assets/js/contact.js"></script>
+    <script src="~/assets/js/related-products.js"></script>
+    <script src='~/assets/js/slick.min.js'></script>
+    <script src="~/assets/js/rev.sliders/web-product.js"></script>
+    <script src="~/assets/js/shop.carousel.js"></script>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '~/~/~/www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-101241150-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+</body>
+
+
+</html>
+

@@ -1,0 +1,4 @@
+﻿@model IEnumerable<CoreMVCUyg.Models.ProductSubCategory>
+@foreach(var item in Model){
+	<li><a href="@Url.Action("ProductSubCategory","Product", new {seo_bas=item.ProductSubCategoryName })"><i class="fa fa-plus-square" aria-hidden="true"></i> &nbsp; @item.ProductSubCategoryName</a></li>
+}

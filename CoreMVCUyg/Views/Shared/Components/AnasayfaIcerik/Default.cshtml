@@ -1,0 +1,17 @@
+﻿@model IEnumerable<CoreMVCUyg.Models.Home>
+@foreach (var item in Model)
+{
+	<div class="row">
+		<div class="col-md-6">
+			<div class="restaurant-about">
+				<h1>@item.Header</h1>
+				<h4>@item.ShortDescription</h4>
+				<p>@item.Description</p>
+
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="restaurant-about-pic"><img src="~/Uploads/@item.ImagePath" alt=""></div>
+		</div>
+	</div>
+}

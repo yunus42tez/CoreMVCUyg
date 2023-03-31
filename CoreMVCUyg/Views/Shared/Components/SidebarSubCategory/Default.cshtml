@@ -1,0 +1,12 @@
+﻿@model IEnumerable<CoreMVCUyg.Models.ProductSubCategory>
+@foreach (var item in Model)
+{
+	<div class="sidebar-header">
+		<h6><a href="@Url.Action("ProductSubCategory","Product",new{seo_bas=item.ProductSubCategoryName})">@item.ProductSubCategoryName</a></h6>
+	</div>
+	<div class="inner-categories">
+		<ul class="list-group">
+			@await Component.InvokeAsync("SidebarCategory", item.ProductSubCategoryId)
+		</ul>
+	</div>
+}

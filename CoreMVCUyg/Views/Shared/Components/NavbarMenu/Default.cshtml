@@ -1,0 +1,12 @@
+﻿@model IEnumerable<CoreMVCUyg.Models.ProductMainCategory>
+@foreach(var item in Model){
+
+        <div class="megamenu-lists">
+            <ul class="megamenu-list list-col-4">
+            <li class="megamenu-list-title"><a href="@Url.Action("ProductMainCategory","Product",new {seo_bas=item.ProductMainCategoryName})">@item.ProductMainCategoryName</a></li>
+                    @await Component.InvokeAsync("NavbarMenuSubCategory", item.ProductMainCategoryId)
+            </ul>
+            
+        </div>
+
+}

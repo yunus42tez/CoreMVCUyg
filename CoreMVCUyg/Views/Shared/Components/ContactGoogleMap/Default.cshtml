@@ -1,0 +1,4 @@
+﻿@model IEnumerable<CoreMVCUyg.Models.WebsiteInfo>
+@foreach(var item in Model){
+<div class="map-container-bottom"><iframe src="@item.GoogleMapLink" width="100%" height="450px" style="border:none;"></iframe></div>
+}

@@ -1,0 +1,11 @@
+﻿@model IEnumerable<CoreMVCUyg.Models.ProductCategory>
+@foreach (var item in Model)
+{
+	var id = item.ProductCategoryId;
+	<li class="list-group-item">
+		<a href="@Url.Action("ProductCategory","Product", new{seo_bas=item.ProductCategoryName})" id="@id">
+			@item.ProductCategoryName
+		</a>
+	</li>
+}
+

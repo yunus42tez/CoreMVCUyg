@@ -1,0 +1,26 @@
+﻿@model IEnumerable<CoreMVCUyg.Models.About>
+@foreach(var item in Model){
+<div class="row">
+    <div class="col-md-6">
+        <div class="about-content">
+            <h3>@item.Header</h3>
+            <h6>@item.ShortDescription</h6>
+            <p>@item.Description</p>
+
+            <button type="button" class="btn btn-custom">More about us</button>
+            <div class="about-signature"><img src="../assets/img/images/signature.png" alt=""></div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="about-image">
+            <div class="youtube-popup" data-listnum="1" style="display: none">
+                <a href="https://www.youtube.com/watch?v=dwfjayxRvqw" class="popup-youtube">
+                    <div class="video-image">
+                        <img src="~/Uploads/@item.ImagePath" alt="">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+}

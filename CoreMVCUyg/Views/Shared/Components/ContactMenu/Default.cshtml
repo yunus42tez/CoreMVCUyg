@@ -1,0 +1,31 @@
+﻿@model IEnumerable<CoreMVCUyg.Models.WebsiteInfo>
+@foreach(var item in Model){
+<div class="col-md-3">
+	<div class="contact-box">
+		<div class="contact-box-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+		<h3>Adres</h3>
+		<p>@item.Adres</p>
+	</div>
+</div>
+	<div class="col-md-3">
+		<div class="contact-box">
+			<div class="contact-box-icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+			<h3>E-Posta</h3>
+			<p>@item.EPosta</p>
+		</div>
+	</div>
+	<div class="col-md-3">
+		<div class="contact-box">
+			<div class="contact-box-icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+			<h3>Telefon</h3>
+			<p>@item.Telefon</p>
+		</div>
+	</div>
+	<div class="col-md-3">
+		<div class="contact-box">
+			<div class="contact-box-icon"><i class="fa fa-fax" aria-hidden="true"></i></div>
+			<h3>Fax</h3>
+			<p>@item.Fax</p>
+		</div>
+	</div>
+}

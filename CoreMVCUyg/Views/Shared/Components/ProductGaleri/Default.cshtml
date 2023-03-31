@@ -1,0 +1,31 @@
+﻿@model IEnumerable<CoreMVCUyg.Models.Product>
+@foreach(var item in Model){
+    @if (item.Vitrin == true)
+    {
+        <div class="col-md-4">
+            <div class="shop-front-thumbs">
+                <div class="top-caption">
+                    @*<p>Office Gadgets</p>*@
+                        <h6><a href="~/Product/ProductDetail/@item.UrunID">@item.UrunAd </a></h6>
+                </div>
+                    <div class="shop-thumb-img"><a href="~/Product/ProductDetail/@item.UrunID"><img src="~/Uploads/@item.ImagePath" alt=""></a></div>
+                <hr class="shop">
+                <div class="bottom-caption">
+                    <div class="bottom-caption" align="center">
+                            <button type="button" class="btn btn-custom"><a href="~/Product/ProductDetail/@item.UrunID">Ürün Detay</a></button>
+                        @*<p><old-price>$69.95</old-price> - $49.95</p>
+                        <div class="rating-box">
+                        <div class="ratingp-stars"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <div class="ratingp-stars"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <div class="ratingp-stars"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <div class="ratingp-stars"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <div class="ratingp-stars"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        </div>*@
+                    </div>
+                    @*<div class="bottom-caption-right"><img src="../assets/img/master/shopping-cart-2.png" alt=""></div>*@
+                </div>
+            </div>
+        </div> 
+        }
+
+}

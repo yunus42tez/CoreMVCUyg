@@ -1,0 +1,15 @@
+﻿@model IEnumerable<CoreMVCUyg.Models.WebsiteInfo>
+@foreach(var item in Model){
+<div class="section">
+    <div class="left-nav">
+        <div class="location-top"><p><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp; @item.EPosta</p></div>
+        <div class="location-top"><p><i class="fa fa-phone-square" aria-hidden="true"></i>&nbsp;  @item.Telefon</p></div>
+    </div>
+    <div class="right-nav">
+        <div class="social-top"><p><a href="@item.Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></p></div>
+        <div class="social-top"><p><a href="@item.Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></p></div>
+        <div class="social-top"><p><a href="@item.Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></p></div>
+        <div class="social-top last-icon"><p><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></p></div>
+    </div>
+</div>
+}
